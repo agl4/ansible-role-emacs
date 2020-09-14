@@ -1,0 +1,56 @@
+---
+name: Molecule testing
+on:
+  push: {}
+  pull_request: {}
+  schedule:
+    - cron: "12 6 * * *"
+
+jobs:
+  molecule:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python_version: ["3.7"]
+        molecule_image:
+          - agoloncser/docker-ansible-fedora31:latest
+          - agoloncser/docker-ansible-fedora32:latest
+          - agoloncser/docker-ansible-ubuntu2010:latest
+          - agoloncser/docker-ansible-ubuntu2004:latest
+          - ubuntu:latest
+          - ubuntu:18.04
+          - fedora:rawhide
+          - fedora:33
+          - debian:10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: emacs
+
+      - name: Set up Python ${{ matrix.python_version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python_version }}
+
+      - name: Install dependencies
+        run: pip install ansible molecule yamllint docker ansible-lint
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+
+      - name: Install Prettier.js
+        run: npm install --global prettier
+
+      - name: Molecule test
+        run: molecule test
+        working-directory: emacs
+        env:
+          MOLECULE_IMAGE: ${{ matrix.molecule_image }}
+
+      - name: Import to Galaxy
+        uses: robertdebock/galaxy-action@1.0.3
+        with:
+          galaxy_api_key: ${{ secrets.galaxy_api_key }}

@@ -1,0 +1,6 @@
+---
+- name: enable emacs ppa
+  apt_repository:
+    repo: ppa:kelleyk/emacs
+    update_cache: yes
+  become: "yes"
