@@ -9,3 +9,8 @@
         - >-
           vars/{{ ansible_os_family }}.yml
       skip: true
+
+- name: packages
+  set_fact:
+    emacs_packages: "{{ __emacs_packages | list }}"
+  when: emacs_packages is not defined
