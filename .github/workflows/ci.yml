@@ -20,7 +20,6 @@ jobs:
           - agoloncser/docker-ansible-ubuntu2004:latest
           - ubuntu:latest
           - ubuntu:18.04
-          - fedora:33
           - debian:10
 
     steps:
