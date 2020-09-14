@@ -5,6 +5,7 @@
       - ca-certificates
       - gnupg
       - software-properties-common
+      - apt-transport-https
     update_cache: yes
 
 - name: enable emacs ppa
