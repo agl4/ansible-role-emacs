@@ -1,4 +1,12 @@
 ---
+- name: install ppa dependencies
+  apt:
+    name:
+      - ca-certificates
+      - gnupg
+      - software-properties-common
+    update_cache: yes
+
 - name: enable emacs ppa
   apt_repository:
     repo: ppa:kelleyk/emacs
