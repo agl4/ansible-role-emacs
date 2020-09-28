@@ -7,6 +7,7 @@
       - software-properties-common
       - apt-transport-https
     update_cache: yes
+  become: "yes"
 
 - name: enable emacs ppa
   apt_repository:

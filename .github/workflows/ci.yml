@@ -18,9 +18,8 @@ jobs:
           - agoloncser/docker-ansible-fedora32:latest
           # - agoloncser/docker-ansible-ubuntu2010:latest
           - agoloncser/docker-ansible-ubuntu2004:latest
-          # - ubuntu:latest
+          - ubuntu:latest
           - ubuntu:18.04
-          # - debian:10
 
     steps:
       - name: Checkout
