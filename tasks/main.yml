@@ -1,18 +1,23 @@
 ---
-- name: OS-specific variables
+- name: os-specific variables
   include_tasks: variables.yml
 
-- name: OS-specific tasks
+- name: os-specific tasks
   include_tasks: "{{ item }}"
   with_first_found:
     - files:
         - >-
-          {{ ansible_os_family }}-{{  ansible_distribution_major_version }}.yml
+          vars/{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml
         - >-
-          {{ ansible_os_family }}.yml
+          vars/{{ ansible_distribution }}.yml
+        - >-
+          vars/{{ ansible_os_family }}-{{  ansible_distribution_major_version
+          }}.yml
+        - >-
+          vars/{{ ansible_os_family }}.yml
       skip: true
 
-- name: Install emacs
+- name: install emacs
   package:
     name: "{{ emacs_packages }}"
   become: "{{ __emacs_install_become | default('yes') }}"
