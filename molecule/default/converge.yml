@@ -3,4 +3,4 @@
   hosts: all
   vars:
   roles:
-    - emacs
+    - ansible-role-emacs
