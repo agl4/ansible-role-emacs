@@ -24,7 +24,7 @@ jobs:
           - agoloncser/docker-ansible-fedora33
           - agoloncser/docker-ansible-ubuntu1804
           - agoloncser/docker-ansible-ubuntu2004
-          - agoloncser/docker-ansible-ubuntu2010
+          # - agoloncser/docker-ansible-ubuntu2010
         include:
           - python_version: "3.8"
             molecule_image: agoloncser/docker-ansible-fedora34
