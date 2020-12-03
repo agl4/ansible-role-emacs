@@ -8,15 +8,11 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - focal
-        - bionic
-        # - groovy
+        - all
     - name: Debian
       versions:
-        - buster
-        - bullseye
+        - all
     - name: Fedora
       versions:
-        - 32
-        - 31
+        - all
 dependencies: []
