@@ -1,11 +1,9 @@
 ---
-- hosts: all
-  gather_facts: false
+- name: Prepare
+  hosts: all
+  gather_facts: yes
   tasks:
-    - name: install python
-      raw: test -e /usr/bin/python3 || ( apt update && apt install -y python3 )
-      changed_when: false
-      failed_when: false
-    - name: install sudo
-      package:
-        name: sudo
+    - name: update repos on debian
+      apt:
+        update_cache: yes
+      when: ansible_distribution == "Debian"
