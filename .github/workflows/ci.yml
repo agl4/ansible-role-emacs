@@ -31,6 +31,9 @@ jobs:
           - python_version: "3.8"
             molecule_image: agoloncser/docker-ansible-fedora34
             experimental: true
+          - python_version: "3.8"
+            molecule_image: agoloncser/docker-ansible-ubuntu2010
+            experimental: true
 
     steps:
       - name: Checkout
