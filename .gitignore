@@ -7,4 +7,4 @@
 /ansible.cfg
 ansible-roles
 /.ansible-roles/
-/.ansible-lint
+roles-galaxy
