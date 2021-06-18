@@ -3,4 +3,4 @@
   hosts: all
   vars:
   roles:
-    - ansible-role-emacs
+    - agoloncser.emacs

@@ -2,7 +2,7 @@
 galaxy_info:
   role_name: emacs
   description: Role for installing emacs. Does no more, no less. You should configure your emacs.d yourself.
-  author: Attila GOLONCSER
+  author: agoloncser
   license: BSD License
   min_ansible_version: 2.8
   platforms:
