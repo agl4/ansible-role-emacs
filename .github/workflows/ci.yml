@@ -18,6 +18,7 @@ jobs:
           - agoloncser/docker-ansible-fedora33
           - agoloncser/docker-ansible-fedora34
           - agoloncser/docker-ansible-ubuntu2004
+          - agoloncser/docker-ansible-ubuntu2110
 
     steps:
       - name: Checkout
