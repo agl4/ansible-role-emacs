@@ -15,9 +15,4 @@ galaxy_info:
     - name: Fedora
       versions:
         - all
-dependencies:
-  - role: agoloncser.ubuntu_ppa
-    vars:
-      ubuntu_ppa_repositories:
-        - ppa:kelleyk/emacs
-    when: ansible_distribution == 'Ubuntu'
+dependencies: []
