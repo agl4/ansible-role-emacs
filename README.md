@@ -1,5 +1,7 @@
 # Role for installing emacs
 
+[![Molecule testing](https://github.com/agoloncser/ansible-role-emacs/actions/workflows/ci.yml/badge.svg)](https://github.com/agoloncser/ansible-role-emacs/actions/workflows/ci.yml)
+
 Ansible role to make sure emacs is installed. Does no more, no
 less. You should take care of your emacs.d yourself.
 
