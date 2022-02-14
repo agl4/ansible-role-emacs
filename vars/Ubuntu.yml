@@ -1,4 +1,4 @@
 ---
 # vars file for ansible-role-desktop-git
 __emacs_packages:
-  - emacs27
+  - emacs
