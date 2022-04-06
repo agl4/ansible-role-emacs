@@ -1,7 +1,7 @@
 ---
 - name: os-specific variables
   ansible.builtin.include_vars: "{{ item }}"
-  ansible.builtin.with_first_found:
+  with_first_found:
     - files:
         - >-
           vars/{{ ansible_distribution }}-{{ ansible_distribution_major_version }}.yml
