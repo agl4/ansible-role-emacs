@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://www.github.com/agoloncser/ansible-role-emacs/compare/v1.1.0...v2.0.0) (2022-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* FQCN builtins
+
+### Features
+
+* FQCN builtins ([7aedfc5](https://www.github.com/agoloncser/ansible-role-emacs/commit/7aedfc59c52bff660eb3f107cd54313491425fbe))
+
+
+### Bug Fixes
+
+* Task FQCN ([38971f0](https://www.github.com/agoloncser/ansible-role-emacs/commit/38971f01d63494992571b3a4045b6379689349de))
+
 ## [1.1.0](https://www.github.com/agoloncser/ansible-role-emacs/compare/v1.0.1...v1.1.0) (2022-02-14)
 
 
