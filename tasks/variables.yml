@@ -1,6 +1,6 @@
 ---
 - name: os-specific variables
-  include_vars: "{{ item }}"
+  ansible.builtin.include_vars: "{{ item }}"
   with_first_found:
     - files:
         - >-
@@ -15,6 +15,6 @@
       skip: true
 
 - name: packages
-  set_fact:
+  ansible.builtin.set_fact:
     emacs_packages: "{{ __emacs_packages | list }}"
   when: emacs_packages is not defined

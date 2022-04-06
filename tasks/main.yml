@@ -1,8 +1,8 @@
 ---
 - name: os-specific variables
-  include_tasks: variables.yml
+  ansible.builtin.include_tasks: variables.yml
 
 - name: install emacs
-  package:
+  ansible.builtin.package:
     name: "{{ emacs_packages }}"
   become: "{{ __emacs_install_become | default('yes') }}"
