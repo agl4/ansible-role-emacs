@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/agoloncser/ansible-role-emacs/compare/v2.0.0...v2.0.1) (2022-08-08)
+
+
+### Bug Fixes
+
+* restrict search vars files inside role ([7900bb7](https://github.com/agoloncser/ansible-role-emacs/commit/7900bb7775a4b6975d8151f961e9c452f0cc1c1f))
+
 ## [2.0.0](https://github.com/agoloncser/ansible-role-emacs/compare/v1.1.0...v2.0.0) (2022-04-06)
 
 
