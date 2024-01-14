@@ -1,5 +1,25 @@
 # Changelog
 
+## 1.0.0 (2024-01-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* FQCN builtins
+
+### Features
+
+* FQCN builtins ([7aedfc5](https://github.com/agoloncser/ansible-role-emacs/commit/7aedfc59c52bff660eb3f107cd54313491425fbe))
+* Remove PPA dependency on Ubuntu ([bef8a3f](https://github.com/agoloncser/ansible-role-emacs/commit/bef8a3f0d83b4991b9bee5b26d49e040a81a9747))
+
+
+### Bug Fixes
+
+* **docs:** Markdown syntax ([83a8eb4](https://github.com/agoloncser/ansible-role-emacs/commit/83a8eb40d64a68b2676853714d922fc178967ebf))
+* On Ubuntu set the package name to emacs ([94c20ff](https://github.com/agoloncser/ansible-role-emacs/commit/94c20ffc390ec36f1cb54bbfd82fb4f2cdc480d8))
+* restrict search vars files inside role ([7900bb7](https://github.com/agoloncser/ansible-role-emacs/commit/7900bb7775a4b6975d8151f961e9c452f0cc1c1f))
+* Task FQCN ([38971f0](https://github.com/agoloncser/ansible-role-emacs/commit/38971f01d63494992571b3a4045b6379689349de))
+
 ## [2.0.1](https://github.com/agoloncser/ansible-role-emacs/compare/v2.0.0...v2.0.1) (2022-08-08)
 
 
