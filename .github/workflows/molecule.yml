@@ -1,28 +1,8 @@
 ---
 name: Molecule
-"on":
-  push: {}
-  pull_request: {}
+on:
+  push:
+  pull_request:
 jobs:
   molecule:
-    runs-on: ubuntu-latest
-    continue-on-error: ${{ matrix.experimental }}
-    strategy:
-      matrix:
-        experimental: [false]
-        molecule_image:
-          - ghcr.io/agl4/docker-molecule-fedora:39
-          - ghcr.io/agl4/docker-molecule-fedora:40
-          - ghcr.io/agl4/docker-molecule-ubuntu:20.04
-          - ghcr.io/agl4/docker-molecule-ubuntu:22.04
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - uses: gofrolist/molecule-action@v2
-        env:
-          MOLECULE_IMAGE: ${{ matrix.molecule_image }}
-          ANSIBLE_FORCE_COLOR: "1"
+    uses: agl4/actions/.github/workflows/molecule.yml@main
