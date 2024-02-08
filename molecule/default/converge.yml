@@ -3,4 +3,4 @@
   hosts: all
   vars:
   roles:
-    - agoloncser.emacs
+    - agl4.emacs
