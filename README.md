@@ -1,6 +1,6 @@
 # Role for installing emacs
 
-[![Molecule testing](https://github.com/agoloncser/ansible-role-emacs/actions/workflows/ci.yml/badge.svg)](https://github.com/agoloncser/ansible-role-emacs/actions/workflows/ci.yml)
+[![Molecule testing](https://github.com/agl4/ansible-role-emacs/actions/workflows/ci.yml/badge.svg)](https://github.com/agl4/ansible-role-emacs/actions/workflows/ci.yml)
 
 Ansible role to make sure emacs is installed. Does no more, no
 less. You should take care of your emacs.d yourself.
@@ -28,7 +28,7 @@ None.
   - hosts: localhost
     vars:
     roles:
-       - agoloncser.emacs
+       - agl4.emacs
 ```
 
 ## License
@@ -37,5 +37,5 @@ BSD
 
 ## Author Information
 
-[@agoloncser](https://github.com/agoloncser)
+[@agl4](https://github.com/agl4)
 
