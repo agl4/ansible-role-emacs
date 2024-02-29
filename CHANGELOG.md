@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/agl4/ansible-role-emacs/compare/v2.0.1...v3.0.0) (2024-02-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* Change username
+
+### Features
+
+* Change username ([b7251bc](https://github.com/agl4/ansible-role-emacs/commit/b7251bca625504212439a3313c59ad397a63dbe3))
+
 ## [2.0.1](https://github.com/agl4/ansible-role-emacs/compare/v2.0.0...v2.0.1) (2022-08-08)
 
 
